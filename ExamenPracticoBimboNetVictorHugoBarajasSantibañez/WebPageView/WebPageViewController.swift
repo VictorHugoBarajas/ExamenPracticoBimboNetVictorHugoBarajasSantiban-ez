@@ -6,24 +6,50 @@
 //
 
 import UIKit
+import WebKit
 
-class WebPageViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+class WebPageViewController: UIViewController{
+  
+  var viewModel : WebPageViewModel!
+  var spaceXInfo: LaunchesPastModel?
+  
+  var webView : WKWebView = {
+    let webView = WKWebView()
+    webView.translatesAutoresizingMaskIntoConstraints = false
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    return webView
+  }()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    initInfo()
+    initUI()
+  }
+  
+  func initInfo(){
+    spaceXInfo = viewModel.webPageInfo
+  }
+  
+  func initUI(){
+    
+    let webLink = spaceXInfo?.links?.wikipedia
+    if webLink == nil{
+      noContent(in: self)
+    }else{
+      let url = URL(string: webLink!)
+      let request = URLRequest(url: url!)
+      webView.load(request)
     }
-    */
-
+    view.addSubview(webView)
+    NSLayoutConstraint.activate([webView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0), webView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0), webView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0), webView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)])
+  }
+  
+  func noContent(in viewController: UIViewController) {
+    let alert = UIAlertController(title: "This launch don't have a wikipedia article.", message: "", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default) )
+    
+    viewController.present(alert, animated: true, completion: nil)
+  }
+  
 }

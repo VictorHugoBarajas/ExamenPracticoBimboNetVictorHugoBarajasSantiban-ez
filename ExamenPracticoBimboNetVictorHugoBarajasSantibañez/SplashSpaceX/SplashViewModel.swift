@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class SplashViewModel{
+  
+  var coordinator : SplashCoordinator!
+  
+  func goToLaunchesPast(){
+    coordinator.goToLaunchesPast()
+  }
+  
+}

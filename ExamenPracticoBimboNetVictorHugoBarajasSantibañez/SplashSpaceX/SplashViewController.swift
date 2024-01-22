@@ -8,22 +8,43 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+  
+  var viewModel : SplashViewModel!
+  
+  var imageSplash : UIImageView = {
+    var image = UIImageView()
+    image.image = UIImage(named: "spaceX")
+    image.translatesAutoresizingMaskIntoConstraints = false
+    image.contentMode = .scaleAspectFit
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    return image
+  }()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    view.backgroundColor = .black
+    initUI()
+    setUpTimer()
+  }
+  
+  
+  func initUI(){
+    view.addSubview(imageSplash)
+    NSLayoutConstraint.activate([
+      imageSplash.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+      imageSplash.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+      imageSplash.widthAnchor.constraint(equalTo: view.widthAnchor),
+      imageSplash.heightAnchor.constraint(equalTo: view.heightAnchor)])
+  }
+  
+  
+  func setUpTimer(){
+    Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(goToLaunchesPast), userInfo: nil, repeats: false)
+  }
+  
+  
+  @objc func goToLaunchesPast() {
+    viewModel.goToLaunchesPast()
+  }
+  
 }

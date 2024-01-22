@@ -1,0 +1,6 @@
+framework module Pods_ExamenPracticoBimboNetVictorHugoBarajasSantiban_ez {
+  umbrella header "Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez-umbrella.h"
+
+  export *
+  module * { export * }
+}

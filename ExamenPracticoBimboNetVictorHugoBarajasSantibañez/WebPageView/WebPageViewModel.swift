@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+class WebPageViewModel{
+  
+  var coordinator : WebPageCoordinator!
+  var webPageInfo : LaunchesPastModel?
+  
+}

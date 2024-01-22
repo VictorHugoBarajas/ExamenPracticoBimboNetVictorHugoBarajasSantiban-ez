@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import UIKit
+
+class DetailedLaunchesViewModel {
+  
+  var coordinator : DetailedLaunchesCoordinator!
+  var detailedInfo : LaunchesPastModel?
+  
+  func goToYouTube(){
+    coordinator.goToYouTube()
+  }
+  func goToWebPage(){
+    coordinator.goToWebPage()
+  }
+}

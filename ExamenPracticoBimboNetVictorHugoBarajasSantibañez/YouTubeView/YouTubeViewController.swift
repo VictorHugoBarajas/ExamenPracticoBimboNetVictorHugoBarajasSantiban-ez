@@ -6,24 +6,70 @@
 //
 
 import UIKit
+import YouTubePlayer
+
 
 class YouTubeViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+  
+  var spaceXInfo : LaunchesPastModel?
+  var viewModel : YouTubeViewModel!
+  
+  var spaceBackground : UIImageView = {
+    var image = UIImageView()
+    image.image = UIImage(named: "fondo2")
+    image.contentMode = .scaleAspectFit
+    image.translatesAutoresizingMaskIntoConstraints = false
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    return image
+  }()
+  
+  var launchViewVideo: UIView = {
+    var view = UIView()
+    view.backgroundColor = .clear
+    view.clipsToBounds = true
+    view.translatesAutoresizingMaskIntoConstraints = false
+    
+    return view
+  }()
+  
+  var launchVideo : YouTubePlayerView = {
+    var video = YouTubePlayerView()
+    
+    return video
+  }()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    view.addSubview(spaceBackground)
+    initInfo()
+    initUI()
+    
+  }
+  
+  func initInfo(){
+    spaceXInfo = viewModel.youTubeInfo
+  }
+  
+  
+  func initUI(){
+    
+    view.addSubview(launchViewVideo)
+    NSLayoutConstraint.activate([launchViewVideo.centerXAnchor.constraint(equalTo: view.centerXAnchor), launchViewVideo.centerYAnchor.constraint(equalTo: view.centerYAnchor), launchViewVideo.widthAnchor.constraint(equalToConstant: width),launchViewVideo.heightAnchor.constraint(equalToConstant: 400)])
+    
+    let youTubeID = spaceXInfo?.links?.youtube_id
+    if youTubeID == nil{
+      noContent(in: self)
+    }else{  launchVideo.loadVideoID((spaceXInfo?.links?.youtube_id)!)
+      
+      launchVideo.frame = CGRect(x: 0, y: 0, width: width, height: 400)
+      launchViewVideo.addSubview(launchVideo)}
+  }
+  
+  func noContent(in viewController: UIViewController) {
+    let alert = UIAlertController(title: "This launch don't have a video.", message: "", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "OK", style: .default) )
+    
+    viewController.present(alert, animated: true, completion: nil)
+  }
+  
 }

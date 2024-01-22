@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F80097F82B59B17300E3386C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80097F72B59B17300E3386C /* AppCoordinator.swift */; };
+		F80097FB2B59B4ED00E3386C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80097FA2B59B4ED00E3386C /* SplashViewController.swift */; };
+		F80097FD2B59B50700E3386C /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80097FC2B59B50700E3386C /* SplashViewModel.swift */; };
+		F80097FF2B59B58A00E3386C /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80097FE2B59B58A00E3386C /* SplashCoordinator.swift */; };
+		F80098022B59BDFF00E3386C /* LaunchesPastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80098012B59BDFF00E3386C /* LaunchesPastViewController.swift */; };
+		F80098042B59BE2400E3386C /* LaunchesPastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80098032B59BE2400E3386C /* LaunchesPastViewModel.swift */; };
+		F80098062B59BE7100E3386C /* LaunchesPastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80098052B59BE7100E3386C /* LaunchesPastCoordinator.swift */; };
+		F80098092B59CF1A00E3386C /* LaunchesPastCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80098082B59CF1A00E3386C /* LaunchesPastCollectionView.swift */; };
+		F800980B2B59CF3200E3386C /* LaunchesPastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800980A2B59CF3200E3386C /* LaunchesPastCollectionViewCell.swift */; };
+		F800980D2B59D0F300E3386C /* LaunchesPastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F800980C2B59D0F300E3386C /* LaunchesPastModel.swift */; };
+		F894451D2B5AF9AA00654776 /* DataBaseSpaceX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894451C2B5AF9AA00654776 /* DataBaseSpaceX.swift */; };
+		F894452C2B5B116E00654776 /* DetailedLaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894452B2B5B116E00654776 /* DetailedLaunchesViewController.swift */; };
+		F894452E2B5B117F00654776 /* DetailedLaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894452D2B5B117F00654776 /* DetailedLaunchesViewModel.swift */; };
+		F89445302B5B119E00654776 /* DetailedLaunchesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894452F2B5B119E00654776 /* DetailedLaunchesCoordinator.swift */; };
+		F89445332B5B11DB00654776 /* CollectionViewCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89445322B5B11DB00654776 /* CollectionViewCarousel.swift */; };
+		F89445352B5B11F500654776 /* CollectionViewCellCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89445342B5B11F500654776 /* CollectionViewCellCarousel.swift */; };
+		F89445382B5D800800654776 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89445372B5D800800654776 /* YouTubeViewController.swift */; };
+		F894453A2B5D803100654776 /* YouTubeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89445392B5D803100654776 /* YouTubeViewModel.swift */; };
+		F894453C2B5D804200654776 /* YouTubeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894453B2B5D804200654776 /* YouTubeCoordinator.swift */; };
+		F894453F2B5D80E100654776 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F894453E2B5D80E100654776 /* WebPageViewController.swift */; };
+		F89445412B5D80FC00654776 /* WebPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89445402B5D80FC00654776 /* WebPageViewModel.swift */; };
+		F89445432B5D811600654776 /* WebPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89445422B5D811600654776 /* WebPageCoordinator.swift */; };
 		F8D16CC22B59AB39008359AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D16CC12B59AB39008359AA /* AppDelegate.swift */; };
 		F8D16CC42B59AB39008359AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D16CC32B59AB39008359AA /* SceneDelegate.swift */; };
 		F8D16CC62B59AB39008359AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D16CC52B59AB39008359AA /* ViewController.swift */; };
@@ -16,6 +38,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30E0B239B29344EDE0FA400B /* Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.release.xcconfig"; path = "Target Support Files/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.release.xcconfig"; sourceTree = "<group>"; };
+		9A2BC25BE64DAEDF25EEF3F5 /* Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.debug.xcconfig"; path = "Target Support Files/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.debug.xcconfig"; sourceTree = "<group>"; };
+		F80097F72B59B17300E3386C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F80097FA2B59B4ED00E3386C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		F80097FC2B59B50700E3386C /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F80097FE2B59B58A00E3386C /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		F80098012B59BDFF00E3386C /* LaunchesPastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastViewController.swift; sourceTree = "<group>"; };
+		F80098032B59BE2400E3386C /* LaunchesPastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastViewModel.swift; sourceTree = "<group>"; };
+		F80098052B59BE7100E3386C /* LaunchesPastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastCoordinator.swift; sourceTree = "<group>"; };
+		F80098082B59CF1A00E3386C /* LaunchesPastCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastCollectionView.swift; sourceTree = "<group>"; };
+		F800980A2B59CF3200E3386C /* LaunchesPastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastCollectionViewCell.swift; sourceTree = "<group>"; };
+		F800980C2B59D0F300E3386C /* LaunchesPastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastModel.swift; sourceTree = "<group>"; };
+		F894451C2B5AF9AA00654776 /* DataBaseSpaceX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseSpaceX.swift; sourceTree = "<group>"; };
+		F894452B2B5B116E00654776 /* DetailedLaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLaunchesViewController.swift; sourceTree = "<group>"; };
+		F894452D2B5B117F00654776 /* DetailedLaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLaunchesViewModel.swift; sourceTree = "<group>"; };
+		F894452F2B5B119E00654776 /* DetailedLaunchesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLaunchesCoordinator.swift; sourceTree = "<group>"; };
+		F89445322B5B11DB00654776 /* CollectionViewCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCarousel.swift; sourceTree = "<group>"; };
+		F89445342B5B11F500654776 /* CollectionViewCellCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellCarousel.swift; sourceTree = "<group>"; };
+		F89445372B5D800800654776 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		F89445392B5D803100654776 /* YouTubeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewModel.swift; sourceTree = "<group>"; };
+		F894453B2B5D804200654776 /* YouTubeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeCoordinator.swift; sourceTree = "<group>"; };
+		F894453E2B5D80E100654776 /* WebPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
+		F89445402B5D80FC00654776 /* WebPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageViewModel.swift; sourceTree = "<group>"; };
+		F89445422B5D811600654776 /* WebPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageCoordinator.swift; sourceTree = "<group>"; };
 		F8D16CBE2B59AB39008359AA /* ExamenPracticoBimboNetVictorHugoBarajasSantibañez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExamenPracticoBimboNetVictorHugoBarajasSantibañez.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8D16CC12B59AB39008359AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8D16CC32B59AB39008359AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +83,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8AE8C8C97C84046F35EF75B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A2BC25BE64DAEDF25EEF3F5 /* Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.debug.xcconfig */,
+				30E0B239B29344EDE0FA400B /* Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D452E0113B3AFC1AD539839F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80097F92B59B49B00E3386C /* SplashSpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				F80097FA2B59B4ED00E3386C /* SplashViewController.swift */,
+				F80097FC2B59B50700E3386C /* SplashViewModel.swift */,
+				F80097FE2B59B58A00E3386C /* SplashCoordinator.swift */,
+			);
+			path = SplashSpaceX;
+			sourceTree = "<group>";
+		};
+		F80098002B59BD8D00E3386C /* SpaceXLaunchesPast */ = {
+			isa = PBXGroup;
+			children = (
+				F894451B2B5AF97C00654776 /* DataBaseSpaceX */,
+				F80098012B59BDFF00E3386C /* LaunchesPastViewController.swift */,
+				F80098072B59CEE800E3386C /* CollectionViewLaunchesPast */,
+				F800980C2B59D0F300E3386C /* LaunchesPastModel.swift */,
+				F80098032B59BE2400E3386C /* LaunchesPastViewModel.swift */,
+				F80098052B59BE7100E3386C /* LaunchesPastCoordinator.swift */,
+			);
+			path = SpaceXLaunchesPast;
+			sourceTree = "<group>";
+		};
+		F80098072B59CEE800E3386C /* CollectionViewLaunchesPast */ = {
+			isa = PBXGroup;
+			children = (
+				F80098082B59CF1A00E3386C /* LaunchesPastCollectionView.swift */,
+				F800980A2B59CF3200E3386C /* LaunchesPastCollectionViewCell.swift */,
+			);
+			path = CollectionViewLaunchesPast;
+			sourceTree = "<group>";
+		};
+		F894451B2B5AF97C00654776 /* DataBaseSpaceX */ = {
+			isa = PBXGroup;
+			children = (
+				F894451C2B5AF9AA00654776 /* DataBaseSpaceX.swift */,
+			);
+			path = DataBaseSpaceX;
+			sourceTree = "<group>";
+		};
+		F894452A2B5B112D00654776 /* DetailedLaunches */ = {
+			isa = PBXGroup;
+			children = (
+				F894452B2B5B116E00654776 /* DetailedLaunchesViewController.swift */,
+				F89445312B5B11B200654776 /* ImageCarousel */,
+				F894452D2B5B117F00654776 /* DetailedLaunchesViewModel.swift */,
+				F894452F2B5B119E00654776 /* DetailedLaunchesCoordinator.swift */,
+			);
+			path = DetailedLaunches;
+			sourceTree = "<group>";
+		};
+		F89445312B5B11B200654776 /* ImageCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				F89445322B5B11DB00654776 /* CollectionViewCarousel.swift */,
+				F89445342B5B11F500654776 /* CollectionViewCellCarousel.swift */,
+			);
+			path = ImageCarousel;
+			sourceTree = "<group>";
+		};
+		F89445362B5D7FD200654776 /* YouTubeView */ = {
+			isa = PBXGroup;
+			children = (
+				F89445372B5D800800654776 /* YouTubeViewController.swift */,
+				F89445392B5D803100654776 /* YouTubeViewModel.swift */,
+				F894453B2B5D804200654776 /* YouTubeCoordinator.swift */,
+			);
+			path = YouTubeView;
+			sourceTree = "<group>";
+		};
+		F894453D2B5D80B700654776 /* WebPageView */ = {
+			isa = PBXGroup;
+			children = (
+				F894453E2B5D80E100654776 /* WebPageViewController.swift */,
+				F89445402B5D80FC00654776 /* WebPageViewModel.swift */,
+				F89445422B5D811600654776 /* WebPageCoordinator.swift */,
+			);
+			path = WebPageView;
+			sourceTree = "<group>";
+		};
 		F8D16CB52B59AB39008359AA = {
 			isa = PBXGroup;
 			children = (
 				F8D16CC02B59AB39008359AA /* ExamenPracticoBimboNetVictorHugoBarajasSantibañez */,
 				F8D16CBF2B59AB39008359AA /* Products */,
+				B8AE8C8C97C84046F35EF75B /* Pods */,
+				D452E0113B3AFC1AD539839F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +201,15 @@
 			isa = PBXGroup;
 			children = (
 				F8D16CC12B59AB39008359AA /* AppDelegate.swift */,
-				F8D16CC32B59AB39008359AA /* SceneDelegate.swift */,
-				F8D16CC52B59AB39008359AA /* ViewController.swift */,
+				F80097F72B59B17300E3386C /* AppCoordinator.swift */,
+				F80097F92B59B49B00E3386C /* SplashSpaceX */,
+				F80098002B59BD8D00E3386C /* SpaceXLaunchesPast */,
+				F894452A2B5B112D00654776 /* DetailedLaunches */,
+				F89445362B5D7FD200654776 /* YouTubeView */,
+				F894453D2B5D80B700654776 /* WebPageView */,
 				F8D16CC72B59AB39008359AA /* Main.storyboard */,
+				F8D16CC52B59AB39008359AA /* ViewController.swift */,
+				F8D16CC32B59AB39008359AA /* SceneDelegate.swift */,
 				F8D16CCA2B59AB3A008359AA /* Assets.xcassets */,
 				F8D16CCC2B59AB3A008359AA /* LaunchScreen.storyboard */,
 				F8D16CCF2B59AB3A008359AA /* Info.plist */,
@@ -74,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8D16CD22B59AB3A008359AA /* Build configuration list for PBXNativeTarget "ExamenPracticoBimboNetVictorHugoBarajasSantibañez" */;
 			buildPhases = (
+				B91EF7B7702BC73829FDDEBB /* [CP] Check Pods Manifest.lock */,
 				F8D16CBA2B59AB39008359AA /* Sources */,
 				F8D16CBB2B59AB39008359AA /* Frameworks */,
 				F8D16CBC2B59AB39008359AA /* Resources */,
+				5C7CACC268BD9948C61ACCA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +285,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C7CACC268BD9948C61ACCA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91EF7B7702BC73829FDDEBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8D16CBA2B59AB39008359AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80097F82B59B17300E3386C /* AppCoordinator.swift in Sources */,
+				F894453F2B5D80E100654776 /* WebPageViewController.swift in Sources */,
+				F89445302B5B119E00654776 /* DetailedLaunchesCoordinator.swift in Sources */,
+				F89445382B5D800800654776 /* YouTubeViewController.swift in Sources */,
+				F80098062B59BE7100E3386C /* LaunchesPastCoordinator.swift in Sources */,
+				F80098092B59CF1A00E3386C /* LaunchesPastCollectionView.swift in Sources */,
+				F800980D2B59D0F300E3386C /* LaunchesPastModel.swift in Sources */,
 				F8D16CC62B59AB39008359AA /* ViewController.swift in Sources */,
+				F894452E2B5B117F00654776 /* DetailedLaunchesViewModel.swift in Sources */,
+				F89445432B5D811600654776 /* WebPageCoordinator.swift in Sources */,
+				F894452C2B5B116E00654776 /* DetailedLaunchesViewController.swift in Sources */,
+				F80098022B59BDFF00E3386C /* LaunchesPastViewController.swift in Sources */,
+				F894451D2B5AF9AA00654776 /* DataBaseSpaceX.swift in Sources */,
+				F89445332B5B11DB00654776 /* CollectionViewCarousel.swift in Sources */,
 				F8D16CC22B59AB39008359AA /* AppDelegate.swift in Sources */,
+				F89445352B5B11F500654776 /* CollectionViewCellCarousel.swift in Sources */,
+				F894453A2B5D803100654776 /* YouTubeViewModel.swift in Sources */,
+				F89445412B5D80FC00654776 /* WebPageViewModel.swift in Sources */,
+				F80097FD2B59B50700E3386C /* SplashViewModel.swift in Sources */,
+				F894453C2B5D804200654776 /* YouTubeCoordinator.swift in Sources */,
+				F80098042B59BE2400E3386C /* LaunchesPastViewModel.swift in Sources */,
+				F80097FF2B59B58A00E3386C /* SplashCoordinator.swift in Sources */,
+				F800980B2B59CF3200E3386C /* LaunchesPastCollectionViewCell.swift in Sources */,
 				F8D16CC42B59AB39008359AA /* SceneDelegate.swift in Sources */,
+				F80097FB2B59B4ED00E3386C /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,19 +503,22 @@
 		};
 		F8D16CD32B59AB3A008359AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A2BC25BE64DAEDF25EEF3F5 /* Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6784N866Q6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,19 +534,22 @@
 		};
 		F8D16CD42B59AB3A008359AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E0B239B29344EDE0FA400B /* Pods-ExamenPracticoBimboNetVictorHugoBarajasSantibañez.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6784N866Q6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ExamenPracticoBimboNetVictorHugoBarajasSantibañez/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

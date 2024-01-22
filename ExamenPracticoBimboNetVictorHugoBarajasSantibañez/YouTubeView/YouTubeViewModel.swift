@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+class YouTubeViewModel{
+  
+  var coordinator : YouTubeCoordinator!
+  var youTubeInfo : LaunchesPastModel?
+  
+}
