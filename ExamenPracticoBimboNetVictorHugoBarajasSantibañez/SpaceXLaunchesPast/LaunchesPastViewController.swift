@@ -69,7 +69,7 @@ class LaunchesPastViewController: UIViewController {
   
   func initUI(){
     view.addSubview(launchesPastLabel)
-    NSLayoutConstraint.activate([launchesPastLabel.widthAnchor.constraint(equalToConstant: 185), launchesPastLabel.heightAnchor.constraint(equalToConstant: 30), launchesPastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10), launchesPastLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 85)])
+    NSLayoutConstraint.activate([launchesPastLabel.widthAnchor.constraint(equalToConstant: 185), launchesPastLabel.heightAnchor.constraint(equalToConstant: 30), launchesPastLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10), launchesPastLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 65)])
     
     collectionViewSpaceX.delegate = self
     view.addSubview(collectionViewSpaceX)

@@ -16,8 +16,8 @@ class YouTubeViewController: UIViewController {
   
   var spaceBackground : UIImageView = {
     var image = UIImageView()
-    image.image = UIImage(named: "fondo2")
-    image.contentMode = .scaleAspectFit
+    image.image = UIImage(named: "fondo")
+    image.contentMode = .scaleAspectFill
     image.translatesAutoresizingMaskIntoConstraints = false
     
     return image
@@ -57,19 +57,11 @@ class YouTubeViewController: UIViewController {
     NSLayoutConstraint.activate([launchViewVideo.centerXAnchor.constraint(equalTo: view.centerXAnchor), launchViewVideo.centerYAnchor.constraint(equalTo: view.centerYAnchor), launchViewVideo.widthAnchor.constraint(equalToConstant: width),launchViewVideo.heightAnchor.constraint(equalToConstant: 400)])
     
     let youTubeID = spaceXInfo?.links?.youtube_id
-    if youTubeID == nil{
-      noContent(in: self)
-    }else{  launchVideo.loadVideoID((spaceXInfo?.links?.youtube_id)!)
-      
-      launchVideo.frame = CGRect(x: 0, y: 0, width: width, height: 400)
-      launchViewVideo.addSubview(launchVideo)}
-  }
-  
-  func noContent(in viewController: UIViewController) {
-    let alert = UIAlertController(title: "This launch don't have a video.", message: "", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "OK", style: .default) )
     
-    viewController.present(alert, animated: true, completion: nil)
+    launchVideo.loadVideoID((youTubeID)!)
+    
+    launchVideo.frame = CGRect(x: 0, y: 0, width: width, height: 400)
+    launchViewVideo.addSubview(launchVideo)
   }
   
 }

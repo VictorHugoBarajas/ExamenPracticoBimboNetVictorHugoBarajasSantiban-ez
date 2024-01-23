@@ -27,7 +27,7 @@ class LaunchesPastCollectionViewCell : UICollectionViewCell{
   
   var translucentView : UIView = {
     var view = UIView()
-    view.layer.cornerRadius = 60
+    view.layer.cornerRadius = height / 12.4
     view.translatesAutoresizingMaskIntoConstraints = false
     let translucentSystemBlue = UIColor.systemBlue.withAlphaComponent(0.3)
     view.backgroundColor = translucentSystemBlue
@@ -83,17 +83,16 @@ class LaunchesPastCollectionViewCell : UICollectionViewCell{
     self.spaceXInfo = spaceXinfo
     
     self.addSubview(translucentView)
-    NSLayoutConstraint.activate([translucentView.widthAnchor.constraint(equalToConstant: 120), translucentView.heightAnchor.constraint(equalToConstant: 120), translucentView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10), translucentView.centerYAnchor.constraint(equalTo: self.centerYAnchor)])
+    NSLayoutConstraint.activate([translucentView.widthAnchor.constraint(equalToConstant: height / 6.2), translucentView.heightAnchor.constraint(equalToConstant: height / 6.2), translucentView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10), translucentView.centerYAnchor.constraint(equalTo: self.centerYAnchor)])
     
     let launchImage = spaceXinfo.links?.mission_patch
     if launchImage == nil{
-      missionImage.image = UIImage(named: "spaceX")
-      missionImage.layer.cornerRadius = 45
+      missionImage.layer.cornerRadius = height / 18
     }else{
       missionImage.sd_setImage(with: URL(string: (spaceXinfo.links?.mission_patch)!), placeholderImage: UIImage(named: "mision1"))
     }
     translucentView.addSubview(missionImage)
-    NSLayoutConstraint.activate([missionImage.centerXAnchor.constraint(equalTo: translucentView.centerXAnchor), missionImage.centerYAnchor.constraint(equalTo: translucentView.centerYAnchor), missionImage.widthAnchor.constraint(equalToConstant: 90), missionImage.heightAnchor.constraint(equalToConstant: 90)])
+    NSLayoutConstraint.activate([missionImage.centerXAnchor.constraint(equalTo: translucentView.centerXAnchor), missionImage.centerYAnchor.constraint(equalTo: translucentView.centerYAnchor), missionImage.widthAnchor.constraint(equalToConstant: height / 9), missionImage.heightAnchor.constraint(equalToConstant: height / 9)])
     
     let missionName = spaceXinfo.mission_name
     if missionName == nil{
@@ -120,7 +119,7 @@ class LaunchesPastCollectionViewCell : UICollectionViewCell{
       let newFormatDate = dateFormatter(date: (spaceXInfo?.launch_date_utc)!)
       dateLabel.text = newFormatDate}
     self.addSubview(dateLabel)
-    NSLayoutConstraint.activate([dateLabel.widthAnchor.constraint(equalToConstant: 200), dateLabel.heightAnchor.constraint(equalToConstant: 15), dateLabel.leadingAnchor.constraint(equalTo: translucentView.trailingAnchor, constant: 10), dateLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -20)])
+    NSLayoutConstraint.activate([dateLabel.widthAnchor.constraint(equalToConstant: 200), dateLabel.heightAnchor.constraint(equalToConstant: 15), dateLabel.leadingAnchor.constraint(equalTo: translucentView.trailingAnchor, constant: 10), dateLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -25)])
   }
   
   func dateFormatter(date : String) -> String {

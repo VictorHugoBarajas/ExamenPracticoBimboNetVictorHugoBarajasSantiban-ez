@@ -16,6 +16,7 @@ class CollectionViewCellCarousel: UICollectionViewCell {
     var image = UIImageView()
     image.clipsToBounds = true
     image.layer.cornerRadius = 15
+    image.contentMode = .scaleToFill
     image.image = UIImage(named: "spaceX")
     image.translatesAutoresizingMaskIntoConstraints = false
     
